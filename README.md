@@ -4,12 +4,36 @@ An interactive terminal-based system for organizing files and monitoring system 
 
 ---
 
+
 ## 👥 Team Members
 
-- **Anmol** – User Info & UI Design 
-- **Jiya** –  File Organizer & Disk Dashboard
-- **Anshu Dhawan** – System Monitoring & Alerts  
-- **Damandeep Singh** – Code Review & Documentation
+<div align="center">
+  
+<table>
+<tr>
+<td align="center">
+  <b>Anmol</b><br>
+  <sub>User Info & UI Design</sub>
+</td>
+<td align="center">
+  <b>Jiya</b><br>
+  <sub>File Organizer & Disk Dashboard</sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+  <b>Anshu Dhawan</b><br>
+  <sub>System Monitoring & Alerts</sub>
+</td>
+<td align="center">
+  <b>Damandeep Singh</b><br>
+  <sub>System Monitoring & Documentation</sub>
+</td>
+</tr>
+</table>
+
+</div>
+
 
 ---
 
