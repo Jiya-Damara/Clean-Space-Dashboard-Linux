@@ -50,10 +50,6 @@
 **Clean Space Dashboard** is a feature-rich terminal utility that offers file organization, disk space monitoring, user tracking, and system alerts — all served on a platter of stylish `dialog` menus.  
 Crafted for Linux power users who love order and despise clutter (and maybe just like pressing arrows in colorful boxes).
 
-<div align="center">
-  <img src="https://media.giphy.com/media/fWg3D6E1PqJd6/giphy.gif" width="400" alt="Terminal Vibes">
-</div>
-
 ---
 
 ## ✨ Key Features
@@ -106,11 +102,12 @@ README.md        # Documentation file (you’re reading it!)
 ### File Organizer Logic
 
 ```mermaid
-flowchart TD
-    A[Scan Current Directory] --> B[Detect File Types]
-    B --> C[Prompt for Overwrite]
-    C --> D[Move to Folders (Images, Docs...)]
-    D --> E[Log Actions to organizer.log]
+graph TD
+    A[Scan Current Directory] --> B[Identify File Types]
+    B --> C[Prompt Before Overwrite]
+    C --> D[Move Files to Folders: Images, Documents, Music, etc.]
+    D --> E[Log Actions (File Count, Size)]
+
 ```
 
 ### Disk Usage Monitoring
