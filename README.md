@@ -1,14 +1,21 @@
-# 🛠️ Clean Space Dashboard - Terminal-Based File Organizer & Disk Dashboard
+<div align="center">
 
-An interactive terminal-based system for organizing files and monitoring system resources using Bash and `dialog`.
+# 🧹 Clean Space Dashboard  
+### A Terminal-Based File Organizer & Disk Monitoring System
+
+<img src="https://64.media.tumblr.com/4e3ed52f25cff0e7b04babdd19f8e144/tumblr_mkiux8S7Xe1rn57sio1_400.gif" alt="Clean Space Dashboard Animation" />
+
+<h3>Linux System Programming Project</h3>
+<p>A sleek and interactive tool to keep your terminal clutter-free and system monitored — right from the command line.</p>
+
+</div>
 
 ---
-
 
 ## 👥 Team Members
 
 <div align="center">
-  
+
 <table>
 <tr>
 <td align="center">
@@ -34,120 +41,134 @@ An interactive terminal-based system for organizing files and monitoring system 
 
 </div>
 
-
 ---
 
 ## 📋 Project Overview
 
-**Clean Space Dashboard** is a powerful yet lightweight Linux terminal utility that helps users **organize files**, **monitor system storage**, and **view logged-in users**, all from an interactive menu using the `dialog` command. It is designed for CLI enthusiasts and beginners alike.
+**Clean Space Dashboard** is a terminal-based Bash application that helps Linux users declutter their directories by organizing files by type, tracking disk usage in real-time, and monitoring system users — all through a user-friendly `dialog` interface.
 
 ---
 
 ## ✨ Key Features
 
-### 📁 File Organizer  
-- Organizes files by type (Images, Videos, Documents, Music, etc.)
-- Prompts for confirmation before overwriting
-- Human-readable file size display
-- Logs every action into `organizer.log`
+<table>
+<tr>
+<td width="50%">
 
-### 📊 Disk Usage Dashboard  
-- Real-time disk usage (`df -h`)
-- Alerts if disk usage exceeds a set threshold (e.g., 80%)
-- Tools like `ncdu`, `iostat`, `vmstat`, `top`
-- Background alerting via `wall` and `notify-send`
+### 📁 File Organizer
+- Auto-organizes files into categories like Images, Documents, Videos, etc.
+- Prevents overwriting files with smart prompts
+- Logs actions to `organizer.log`
+- Displays file size summary
 
-### 👥 User Info  
-- Shows currently logged-in users using `who`
+### 👥 User Info
+- Displays currently logged-in users using `who`
 
-### 🚨 Background Alerts  
-- Monitors disk usage of root (`/`) partition every 5 minutes
-- Sends terminal warnings when usage exceeds threshold
+</td>
+<td width="50%">
+
+### 📊 Disk Usage Dashboard
+- Visual system storage via `df -h`
+- Disk alert system (e.g. 80% usage)
+- Additional tools: `ncdu`, `iostat`, `vmstat`, `top`
+
+### 🚨 Background Alerts
+- Monitors `/` disk usage every 5 minutes
+- Sends alerts using `wall` or `notify-send`
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 📂 Project Structure
+## 🗂️ Project Structure
 
 ```bash
 organizer.sh     # Main Bash script
-organizer.log  # Log file for file movements
-README.md      # Documentation
+organizer.log    # Log file for file movements
+README.md        # Project documentation
 ```
 
 ---
 
-## ⚙️ How It Works
+## 🛠️ How It Works
 
-### File Organizer
+### 🧠 File Organizer Logic
+- Scans current directory
+- Moves files to `/Images`, `/Videos`, `/Documents`, etc.
+- Prompts before overwriting
+- Logs count and total size
 
-- Scans current directory for files of specific types
-- Moves files into respective folders (`/Images`, `/Videos`, etc.)
-- Prevents overwriting with prompts
-- Records count and size in logs
-
-### Disk Dashboard
-
-- Menu-based viewer for storage stats
-- Auto-alerts when disk usage exceeds limits
-- Offers visual and statistical system health reports
+### 📈 Disk Monitoring Logic
+- Disk usage stats via CLI tools
+- Alerts user if usage crosses threshold
+- Optional background check script
 
 ---
 
-## 📸 Screenshots
+## 🖼️ Screenshots
 
-*Add terminal screenshots here if available (e.g., `main_menu.png`)*
+*Add screenshots here:*  
+- `main_menu.png`  
+- `disk_dashboard.png`  
+- `organizer_log.png`
 
 ---
 
-## 🛠️ Setup & Usage
+## ⚙️ Setup & Usage
 
-### Requirements
+### 📦 Requirements
 
 - Linux OS
 - `bash`
 - `dialog`
 - Optional: `ncdu`, `iostat`, `vmstat`, `notify-send`
 
-### Install dependencies
+### 🧪 Install Dependencies
 
 ```bash
 sudo apt update
 sudo apt install dialog ncdu sysstat
 ```
 
-### Run the script
+### ▶️ Run the Script
 
 ```bash
-chmod +x systidy.sh
-./systidy.sh
+chmod +x organizer.sh
+./organizer.sh
 ```
 
 ---
 
-## 📚 Learning Outcomes
+## 🎓 Learning Outcomes
 
-- Bash scripting & Linux terminal automation
-- Disk and file system monitoring
-- Using `dialog` for text-based UIs
-- Background process scripting
-- Working collaboratively on a CLI project
-
----
-
-## 🔮 Future Enhancements
-
-- Desktop notifications or email alerts
-- Web-based log viewer dashboard
-- Custom folder configuration
-- Backup and undo options
+- Bash scripting for real-world use
+- Linux system programming and utilities
+- Disk management & automation
+- Using `dialog` for better CLI UX
+- Collaboration using Git and terminal tools
 
 ---
 
-## 🤝 Acknowledgments
+## 🚀 Future Enhancements
 
-Special thanks to our Linux System Programming faculty for motivating us to build and deliver real-world shell-based tools.
+- Desktop/email notifications
+- Undo or backup feature
+- Web-based log viewer
+- Custom user settings
 
 ---
 
-<p align="center">Built with ❤️ in Bash | © 2025 Team Clean Space Dashboard</p>
+## 🙏 Acknowledgments
 
+Special thanks to our **Linux System Programming** instructor for guiding us toward creating meaningful terminal-based utilities.
+
+---
+
+<div align="center">
+
+Built with ❤️ in Bash  
+© 2025 Team Clean Space Dashboard
+
+</div>
