@@ -103,11 +103,10 @@ README.md        # Documentation file (you’re reading it!)
 
 ```mermaid
 graph TD
-    A[Scan Current Directory] --> B[Identify File Types]
+    A[Scan Directory] --> B[Identify File Types]
     B --> C[Prompt Before Overwrite]
-    C --> D[Move Files to Folders: Images, Documents, Music, etc.]
-    D --> E[Log Actions (File Count, Size)]
-
+    C --> D[Move Files to Categories]
+    D --> E[Log File Count and Size]
 ```
 
 ### Disk Usage Monitoring
