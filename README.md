@@ -94,9 +94,9 @@ file-disk-manager/         # Main project folder
 ├── organizer.sh           # Main Bash script for organizing files
 ├── organizer.log          # Log file generated for tracking file movements
 ├── test1.avi              # Sample test files (11 total)
-├── test2.jpg              # Example test files for organization
+├── test2.jpg              
 ├── ...                    # (Other test files)
-../README.md               # Project documentation (this file is outside the folder)
+../README.md               # Project documentation
 ```
 
 ---
