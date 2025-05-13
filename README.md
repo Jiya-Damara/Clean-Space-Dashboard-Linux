@@ -90,9 +90,13 @@ Crafted for Linux power users who love order and despise clutter (and maybe just
 ## 🗂️ Project Structure
 
 ```bash
-organizer.sh     # Main Bash script
-organizer.log    # Log file for file movements
-README.md        # Documentation file (you’re reading it!)
+file-disk-manager/         # Main project folder
+├── organizer.sh           # Main Bash script for organizing files
+├── organizer.log          # Log file generated for tracking file movements
+├── test1.avi              # Sample test files (11 total)
+├── test2.jpg              # Example test files for organization
+├── ...                    # (Other test files)
+../README.md               # Project documentation (this file is outside the folder)
 ```
 
 ---
